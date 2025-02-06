@@ -33,16 +33,13 @@ python -m venv venv
 Activa el entorno virtual:
 
 En Windows:
-
-bash
-Copy
 venv\Scripts\activate
 En macOS/Linux:
-
 source venv/bin/activate
-Instala las dependencias:
 
+Instala las dependencias:
 pip install -r requirements.txt
+
 Configura las variables de entorno en el archivo .env.
 
 Uso

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        h2 {
+            font-size: 20px;
+            color: #4CAF50;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+        .score {
+            font-weight: bold;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bienvenido a la Página Principal</h1>
+        <p>Has iniciado sesión correctamente.</p>
+        
+        <h2>Respuesta del Modelo:</h2>
+        <p>{{ message }}</p>
+        
+        <h2>Puntaje de Anomalía:</h2>
+        <p class="score">{{ anomaly_score }}</p>
+    </div>
+</body>
+
+</html>
+

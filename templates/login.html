@@ -1,0 +1,65 @@
+<!-- templates/login.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f5;
+        }
+        .login-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+        h2 {
+            color: #333333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #555555;
+        }
+        input[type="text"], input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 8px;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+            font-size: 14px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Inicio de Sesión</h2>
+        <form action="/login" method="post">
+            <label for="user_data">Datos del usuario:</label>
+            <input type="text" id="user_data" name="user_data" required>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
+
